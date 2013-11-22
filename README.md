@@ -1,7 +1,7 @@
 # Yamm #
 
 
-This is *Yet another megamenu for [Bootstrap](http://twitter.github.io/bootstrap/)* from Twitter.   
+This is *Yet another megamenu for [Bootstrap 3](http://getbootstrap.com/)* from Twitter.   
    
 Lightweight and pure CSS megamenu that uses the standard navbar markup and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
 
