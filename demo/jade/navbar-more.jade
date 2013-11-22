@@ -1,0 +1,132 @@
+// Extra components navbar 
+.navbar.navbar-default.yamm
+  .navbar-header
+    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-2')
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a.navbar-brand(href='#') Yamm Megamenu
+  #navbar-collapse-2.navbar-collapse.collapse
+    ul.nav.navbar-nav
+      // Media Example 
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Media
+          b.caret
+        ul.dropdown-menu
+          li
+            .yamm-content
+              ul.media-list
+                li.media
+                  a.pull-right(href='#')
+                    img.media-object(src='http://placekitten.com/64/64/', alt='64x64')
+                  .media-body
+                    h4.media-heading Media heading
+                    | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
+                li.media
+                  a.pull-right(href='#')
+                    img.media-object(src='http://placekitten.com/64/64/', alt='64x64')
+                  .media-body
+                    h4.media-heading Media heading
+                    | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
+      // Tables 
+      li.dropdown.yamm-fullwidth
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Tables
+          b.caret
+        ul.dropdown-menu
+          li
+            .yamm-content
+              table.table.table-hover
+                thead
+                  tr
+                    th #
+                    th First Name
+                    th Last Name
+                    th Username
+                    th First Name
+                    th Last Name
+                    th Username
+                tbody
+                  tr
+                    td 1
+                    td Mark
+                    td Otto
+                    td @mdo
+                    td Mark
+                    td Otto
+                    td @mdo
+                  tr
+                    td 2
+                    td Jacob
+                    td Thornton
+                    td @fat
+                    td Jacob
+                    td Thornton
+                    td @fat
+                  tr
+                    td 3
+                    td(colspan='2') Larry the Bird
+                    td @twitter
+                    td(colspan='2') Larry the Bird
+                    td @twitter
+      // Thumbnails demo 
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Thumbnails
+          b.caret
+        ul.dropdown-menu
+          li
+            .yamm-content
+              .row
+                .col-sm-4
+                  .thumbnail
+                    img(alt='260x130', src='http://placekitten.com/260/130/')
+                    .caption
+                      h3 Thumb Label
+                      p
+                        | Mazagran doppio half and half aftertaste organic, rich doppio
+                      p
+                        a.btn.btn-primary(href='#') Action
+                        |  
+                        a.btn.btn-default(href='#') Action
+                .col-sm-4
+                  .thumbnail
+                    img(alt='260x130', src='http://placekitten.com/260/130/')
+                    .caption
+                      h3 Thumb Label
+                      p
+                        | Black latte cinnamon, cultivar trifecta crema cappuccino
+                      p
+                        a.btn.btn-primary(href='#') Action
+                        |  
+                        a.btn.btn-default(href='#') Action
+                .col-sm-4
+                  .thumbnail
+                    img(alt='260x130', src='http://placekitten.com/260/130/')
+                    .caption
+                      h3 Thumb Label
+                      p
+                        | Bar roast et, as latte café au lait, mocha aromatic robusta
+                      p
+                        a.btn.btn-primary(href='#') Action 
+                        |  
+                        a.btn.btn-default(href='#') Action 
+    ul.nav.navbar-nav.navbar-right
+        // Forms 
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Forms
+            b.caret
+          ul.dropdown-menu
+            li
+              .yamm-content
+                form(action='send.php')
+                  .form-group
+                    input.form-control#inputName(type='text', placeholder='Name')
+                  .form-group
+                    input.form-control#inputEmail(type='password', placeholder='Email')
+                  .form-group
+                    textarea.form-control(placeholder="Write your message..")
+                  .form-group
+                    button.btn.btn-success(type='submit') Send

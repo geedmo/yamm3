@@ -1,0 +1,134 @@
+// Demo navbar 
+.navbar.yamm.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-1')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='#') Yamm Megamenu
+    #navbar-collapse-1.navbar-collapse.collapse
+      ul.nav.navbar-nav
+        // Classic list 
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | List
+            b.caret
+          ul.dropdown-menu
+            li
+              // Content container to add padding 
+              .yamm-content
+                .row
+                  ul.col-sm-2.list-unstyled
+                    li
+                      p: strong Section Title
+                    li List Item
+                    li List Item
+                    li List Item
+                    li List Item
+                    li List Item
+                    li List Item
+                  ul.col-sm-2.list-unstyled
+                    li
+                      p: strong Links Title
+                    li: a(href='#')  Link Item 
+                    li: a(href='#')  Link Item 
+                    li: a(href='#')  Link Item 
+                    li: a(href='#')  Link Item 
+                    li: a(href='#')  Link Item 
+                    li: a(href='#')  Link Item 
+                  ul.col-sm-2.list-unstyled
+                    li
+                      p: strong Section Title
+                    li List Item
+                    li List Item
+                    li List Item
+                    li List Item
+                    li List Item
+                    li List Item
+                  ul.col-sm-2.list-unstyled
+                    li
+                      p: strong Section Title
+                    li List Item
+                    li List Item
+                    li
+                      ul
+                        li: a(href='#')  Link Item 
+                        li: a(href='#')  Link Item 
+                        li: a(href='#')  Link Item 
+        // Accordion demo 
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Accordion
+            b.caret
+          ul.dropdown-menu
+            li
+              .yamm-content
+                .row
+                  #accordion.panel-group
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+                            | Collapsible Group Item #1
+                      #collapseOne.panel-collapse.collapse.in
+                        .panel-body
+                          | Ut consectetur ullamcorper purus a rutrum. Etiam dui nisi, hendrerit feugiat scelerisque et, cursus eu magna. 
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+                            | Collapsible Group Item #2
+                      #collapseTwo.panel-collapse.collapse
+                        .panel-body
+                          | Nullam pretium fermentum sapien ut convallis. Suspendisse vehicula, magna non tristique tincidunt, massa nisi luctus tellus, vel laoreet sem lectus ut nibh. 
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+                            | Collapsible Group Item #3
+                      #collapseThree.panel-collapse.collapse
+                        .panel-body
+                          | Praesent leo quam, faucibus at facilisis id, rhoncus sit amet metus. Sed vitae ipsum non nibh mattis congue eget id augue. 
+        // Classic dropdown 
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Classic
+            b.caret
+          ul.dropdown-menu(role='menu')
+            li
+              a(tabindex='-1', href='#')  Action 
+            li
+              a(tabindex='-1', href='#')  Another action 
+            li
+              a(tabindex='-1', href='#')  Something else here 
+            li.divider
+            li
+              a(tabindex='-1', href='#')  Separated link 
+        // Pictures 
+        li.dropdown.yamm-fw
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Pictures
+            b.caret
+          ul.dropdown-menu
+            li
+              .yamm-content
+                .row
+                  .col-xs-6.col-sm-2
+                    a.thumbnail(href='#')
+                      img(alt='150x190', src='http://placekitten.com/150/190/')
+                  .col-xs-6.col-sm-2
+                    a.thumbnail(href='#')
+                      img(alt='150x190', src='http://placekitten.com/150/190/')
+                  .col-xs-6.col-sm-2
+                    a.thumbnail(href='#')
+                      img(alt='150x190', src='http://placekitten.com/150/190/')
+                  .col-xs-6.col-sm-2
+                    a.thumbnail(href='#')
+                      img(alt='150x190', src='http://placekitten.com/150/190/')
+                  .col-xs-6.col-sm-2
+                    a.thumbnail(href='#')
+                      img(alt='150x190', src='http://placekitten.com/150/190/')
+                  .col-xs-6.col-sm-2
+                    a.thumbnail(href='#')
+                      img(alt='150x190', src='http://placekitten.com/150/190/')

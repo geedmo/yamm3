@@ -1,0 +1,153 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Yet another megamenu for Bootstrap 3')
+    meta(name='author', content='@geedmo')
+    title Yamm!3 Megamenu for Bootstrap3
+    
+    // Bootstrap and demo CSS 
+    link(href='demo/css/bootstrap.min.css', rel='stylesheet')
+    link(href='demo/css/bootstrap-theme.min.css', rel='stylesheet')
+    link(href='demo/css/demo.css', rel='stylesheet')
+
+    // Yamm styles
+    link(href='yamm/yamm.css', rel='stylesheet')
+    
+
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+
+  body
+
+    include navbar-fixed
+
+    .jumbotron.intro
+
+      .container
+
+        h1.page-header Hello, Yamm 3!
+        p
+          | This is
+          i Yet another megamenu 
+          | for Bootstrap 3 from Twitter. Lightweight and pure CSS megamenu that uses the standard navbar markup and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+        p This project is currently hosted on Github and is the sequel to Bootstrap2 Yamm 
+          small: sup: a.text-muted(href="http://geedmo.github.com/yamm", title="Yamm for Bootstrap 2", target="_blank")
+            em.glyphicon.glyphicon-new-window
+        br
+        p
+          a.btn.btn-default.btn-lg(href='https://github.com/geedmo/yamm3') View on Github
+          |  
+          a.btn.btn-primary.btn-lg(href='https://github.com/geedmo/yamm3/archive/master.zip') Download
+
+    .container
+      .row
+        .col-md-4
+          p.lead Markup
+          :markdown
+            1. Reuse navbar markup and add class `.yamm` at the top.
+
+            2. Then add your markup into the `.dropdown-menu`
+
+            3. Optionally use `.yamm-content` to wrap content with padding.
+        
+        .col-md-8
+          pre.prettyprint
+            | &lt;nav class="navbar yamm navbar-default " role="navigation"&gt;
+            | ...
+            |      &lt;ul class="nav navbar-nav"&gt;
+            |        &lt;li class="dropdown"&gt;
+            |          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown&lt;/a&gt;
+            |          &lt;ul class="dropdown-menu"&gt;
+            |            &lt;li&gt;
+            |                &lt;div class="yamm-content"&gt;
+            |                   &lt;div class="row"&gt; 
+            |                     ...
+            |            &lt;/li&gt;
+            |          &lt;/ul&gt;
+            |        &lt;/li&gt;
+            |      &lt;/ul&gt;
+            | ...
+            | &lt;/nav&gt;
+
+    .jumbotron
+      .container
+        p.lead Grid Example
+        include navbar-grid
+    .container
+      .row
+        .col-md-4
+          p.lead Width
+          :markdown
+            By default every mega-dropdown will take the content size so is possible to use add `.yamm-fw` to `.dropdown` to expand it fullwidth
+
+            Yamm works better with fullwidth menus.
+
+        .col-md-8
+          pre.prettyprint
+            | &lt;nav class="navbar yamm navbar-default " role="navigation"&gt;
+            | ...
+            |      &lt;ul class="nav navbar-nav"&gt;
+            |        &lt;li class="dropdown yamm-fw"&gt;
+            |              ...
+            |        &lt;/li&gt;
+            |      &lt;/ul&gt;
+            | ...
+            | &lt;/nav&gt;
+
+    .jumbotron
+      .container
+        p.lead More components
+        include navbar-more
+
+    .container
+      .row
+        .col-md-4
+          p.lead JavaScript
+          :markdown
+            This code will prevent unexpected menu close when using some components (like accordion, forms, etc)
+
+        .col-md-8
+          pre.prettyprint
+            | $(document).on('click', '.yamm .dropdown-menu', function(e) {
+            |   e.stopPropagation()
+            | })
+
+      footer
+          hr
+          .row
+            .col-sm-4
+              p
+                | MIT &copy; Geedmo 2013
+            .col-sm-8
+              .social
+                ul.list-inline.text-right
+                  li
+                    iframe.github-btn(src='http://ghbtns.com/github-btn.html?user=geedmo&repo=yamm3&type=watch&count=true', allowtransparency='true', frameborder='0', scrolling='0', width='100px', height='20px')
+                  li
+                    iframe.github-btn(src='http://ghbtns.com/github-btn.html?user=geedmo&repo=yamm3&type=fork&count=true', allowtransparency='true', frameborder='0', scrolling='0', width='98px', height='20px')
+                  li
+                    a.twitter-share-button(href='https://twitter.com/share', data-lang='en') Tweet
+
+
+    // /container 
+
+    // Bootstrap core JavaScript
+    script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js')
+    script(src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css')
+
+    script
+        $(function() {
+          window.prettyPrint && prettyPrint()
+          $(document).on('click', '.yamm .dropdown-menu', function(e) {
+            e.stopPropagation()
+          })
+        })
+    // tweet and share :)
+    script
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

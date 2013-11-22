@@ -1,0 +1,100 @@
+// Grid demo navbar 
+.navbar.navbar-default.yamm
+  .navbar-header
+    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-grid')
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a.navbar-brand(href='#') Yamm Megamenu
+  #navbar-collapse-grid.navbar-collapse.collapse
+    ul.nav.navbar-nav
+      // Grid 12 Menu 
+      li.dropdown.yamm-fw
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Grid
+          b.caret
+        ul.dropdown-menu
+          li.grid-demo
+            .row
+              .col-sm-12 .col-sm-12
+            .row
+              .col-sm-6 .col-sm-6
+              .col-sm-6 .col-sm-6
+            .row
+              .col-sm-4 .col-sm-4
+              .col-sm-4 .col-sm-4
+              .col-sm-4 .col-sm-4
+            .row
+              .col-sm-3 .col-sm-3
+              .col-sm-3 .col-sm-3
+              .col-sm-3 .col-sm-3
+              .col-sm-3 .col-sm-3
+            .row
+              .col-sm-2 .col-sm-2
+              .col-sm-2 .col-sm-2
+              .col-sm-2 .col-sm-2
+              .col-sm-2 .col-sm-2
+              .col-sm-2 .col-sm-2
+              .col-sm-2 .col-sm-2
+            .row
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+              .col-sm-1 .col-sm-1
+      //
+         With Offsets 
+      li.dropdown.yamm-fw
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Offset
+          b.caret
+        ul.dropdown-menu
+          li.grid-demo
+            .row
+              .col-sm-4 4
+              .col-sm-4.col-sm-offset-4 4 offset 4
+            .row
+              .col-sm-3.col-sm-offset-3 3 offset 3
+              .col-sm-3.col-sm-offset-3 3 offset 3
+            .row
+              .col-sm-6.col-sm-offset-3 6 offset 6
+      //
+         Aside Menu 
+      li.dropdown.yamm-fw
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Aside
+          b.caret
+        ul.dropdown-menu
+          li.grid-demo
+            .row
+              .col-sm-3
+                br
+                h3 3
+                br
+              .col-sm-9
+                br
+                h3 9
+                br
+      //
+         Nesting Menu 
+      li.dropdown.yamm-fw
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Nesting
+          b.caret
+        ul.dropdown-menu
+          li.grid-demo
+            .row
+              .col-sm-12 12
+            .row
+              .col-sm-12 12
+                .row
+                  .col-sm-4 4
+                  .col-sm-4 4
+                  .col-sm-4 4
