@@ -60,7 +60,7 @@ If necessary, this code will prevent unexpected menu close when using some compo
     })
 
 
-#[Online Demo](http://geedmo.github.io/yamm)
+#[Online Demo](http://geedmo.github.io/yamm3)
 
 
 
