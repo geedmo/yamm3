@@ -60,6 +60,14 @@ If necessary, this code will prevent unexpected menu close when using some compo
     })
 
 
+### Install via composer
+
+	{ 
+		"require": {
+			"geedmo/yamm3": "dev-master"
+		}
+	}
+
 #[Online Demo](http://geedmo.github.io/yamm3)
 
 
