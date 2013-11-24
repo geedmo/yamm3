@@ -1,0 +1,16 @@
+{
+    "name": "geedmo/yamm3",
+    "description": "Yet another megamenu for Bootstrap 3.x",
+	"keywords": ["bootstrap", "megamenu"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "German Morales",
+            "email": "geedmo.ds@gmail.com",
+			"homepage": "http://geedmo.com"
+        }
+    ],
+    "support": {
+      "issues": "https://github.com/geedmo/yamm3/issues"
+    }
+}
