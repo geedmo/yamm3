@@ -9,36 +9,57 @@
 //  Yamm Styles
 //-----------------------------
 
-.yamm {
+.yamm
+{
+    // reset positions
+    .nav, .collapse, .dropup, .dropdown
+    {
+        position: static;
+    }
+    // propagate menu position under container for fw navbars
+    .container
+    {
+        position: relative;
+    }
+    // by default aligns menu to left
+    .dropdown-menu
+    {
+        left: auto;
+    }
+    // ensure a good position
+    .nav.navbar-right .dropdown-menu
+    {
+        left: auto;
+        right: 0;
+    }
+    // Content with padding
+    .yamm-content
+    {
+        padding: 20px 30px;
+    }
+    // Fullwidth menu
+    .dropdown.yamm-fw .dropdown-menu
+    {
+        left: 0;
+        right: 0;
+    }
+}
 
-  // reset positions 
-  .nav, .collapse, .dropup, .dropdown {
-    position: static;
-  }  
+@media(max-width:767px)
+{
+    // Responsive megamenu
+    .yamm-responsive.navbar-fixed-top, .yamm-responsive.navbar-fixed-bottom
+    {
+        position: relative;
+    }
 
-  // propagate menu position under container for fw navbars
-  .container {
-    position: relative;
-  }
+    .navbar-collapse.in
+    {
+        overflow-y: visible;
+    }
 
-  // by default aligns menu to left
-  .dropdown-menu {
-    left: auto;
-  }
-  // ensure a good position
-  .nav.navbar-right .dropdown-menu {
-    left: auto;
-    right: 0;
-  }
-  
-  // Content with padding 
-  .yamm-content {
-    padding: 20px 30px;
-  }
-
-  // Fullwidth menu
-  .dropdown.yamm-fw .dropdown-menu {
-    left: 0; right: 0;
-  }
-
+    .navbar-collapse
+    {
+        max-height: none;
+    }
 }
