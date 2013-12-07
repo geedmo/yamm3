@@ -50,6 +50,15 @@ Example
     ...
     </nav>
 
+### Optional Responsive Adjustment to Fixed Navbars
+
+Optionally `.yamm-responsive` to a fixed `.navbar-fixed-top` or `.navbar-fixed-bottom` to change its behavior on mobile devices. Navbar will no longer be fixed, and megamenu content will be fully visible by no longer floating over content.
+
+Example
+
+    <nav class="navbar yamm yamm-responsive navbar-default navbar-fixed-top" role="navigation">
+    ...
+    </nav>
 
 ### Javascript
 
