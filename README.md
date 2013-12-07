@@ -52,7 +52,7 @@ Example
 
 ### Optional Responsive Adjustment to Fixed Navbars
 
-Optionally `.yamm-responsive` to a fixed `.navbar-fixed-top` or `.navbar-fixed-bottom` to change its behavior on mobile devices. Navbar will no longer be fixed, and megamenu content will be fully visible by no longer floating over content.
+Optionally add `.yamm-responsive` to a fixed `.navbar-fixed-top` or `.navbar-fixed-bottom` to change its behavior on mobile devices. Navbar will no longer be fixed, and megamenu content will be fully visible by no longer floating over content.
 
 Example
 
