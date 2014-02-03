@@ -23,6 +23,10 @@
 .yamm .yamm-content {
   padding: 20px 30px;
 }
+.yamm-content div[class*="col-"]
+{
+  width: auto;
+}
 .yamm .dropdown.yamm-fw .dropdown-menu {
   left: 0;
   right: 0;
