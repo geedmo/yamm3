@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * Yamm!3
  * Yet another megamenu for Bootstrap 3
  * 
@@ -26,4 +26,16 @@
 .yamm .dropdown.yamm-fw .dropdown-menu {
   left: 0;
   right: 0;
+}
+@media (max-width: 767px) {
+  .yamm-responsive.navbar-fixed-top,
+  .yamm-responsive.navbar-fixed-bottom {
+    position: relative;
+  }
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+  .navbar-collapse {
+    max-height: none;
+  }
 }
