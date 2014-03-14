@@ -1,0 +1,17 @@
+{
+    "name": "Yamm3",
+    "description": "Yet another megamenu for Bootstrap 3",
+    "authors": [
+		{
+			"name": "geedmo ds.",
+			"email": "geedmo.ds@gmail.com",
+			"homepage": "http://geedmo.com/"
+		}
+    ],
+    "keywords": ["bootstrap", "megamenu", "megadropdown"],
+    "version": "1.0.0",
+    "main": "yamm/yamm.css",
+    "dependencies": {
+        "bootstrap": ">= 3.0.0"
+    }
+}
