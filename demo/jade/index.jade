@@ -1,4 +1,4 @@
-!!! 5
+doctype
 html(lang='en')
   head
     meta(charset='utf-8')
@@ -7,7 +7,7 @@ html(lang='en')
     meta(name='description', content='Yet another megamenu for Bootstrap 3')
     meta(name='author', content='@geedmo')
     title Yamm!3 Megamenu for Bootstrap3
-    
+
     // Bootstrap and demo CSS 
     link(href='demo/css/bootstrap.min.css', rel='stylesheet')
     link(href='demo/css/bootstrap-theme.min.css', rel='stylesheet')
@@ -15,7 +15,6 @@ html(lang='en')
 
     // Yamm styles
     link(href='yamm/yamm.css', rel='stylesheet')
-    
 
     // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
     //if lt IE 9
@@ -122,7 +121,7 @@ html(lang='en')
           .row
             .col-sm-4
               p
-                | MIT &copy; Geedmo 2013
+                | MIT &copy; Geedmo 2014
             .col-sm-8
               .social
                 ul.list-inline.text-right
@@ -138,16 +137,16 @@ html(lang='en')
 
     // Bootstrap core JavaScript
     script(src='https://code.jquery.com/jquery-1.10.2.min.js')
-    script(src='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js')
+    script(src='demo/js/bootstrap.min.js')
     script(src='https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css')
 
-    script
-        $(function() {
-          window.prettyPrint && prettyPrint()
-          $(document).on('click', '.yamm .dropdown-menu', function(e) {
-            e.stopPropagation()
-          })
+    script.
+      $(function() {
+        window.prettyPrint && prettyPrint()
+        $(document).on('click', '.yamm .dropdown-menu', function(e) {
+          e.stopPropagation()
         })
+      })
     // tweet and share :)
     script
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
