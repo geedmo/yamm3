@@ -1,9 +1,11 @@
-# Yamm #
+# Yamm
 
 
 This is *Yet another megamenu for [Bootstrap 3](http://getbootstrap.com/)* from Twitter.   
    
 Lightweight and pure CSS megamenu that uses the standard navbar markup and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+
+####[Demo](http://geedmo.github.io/yamm3)
 
 ### Markup
 
@@ -68,7 +70,17 @@ If necessary, this code will prevent unexpected menu close when using some compo
 		}
 	}
 
-#[Online Demo](http://geedmo.github.io/yamm3)
+### Compile
 
+Run the following commands in the repository folder
 
+- npm install
+- gulp
 
+To compile yamm with demo
+
+- gulp demo
+
+### License
+
+- Licenced under MIT - [details here](LICENSE.txt)
