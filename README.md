@@ -70,6 +70,10 @@ If necessary, this code will prevent unexpected menu close when using some compo
 		}
 	}
 
+### Install with bower
+
+	bower install yamm3 --save
+
 ### Compile
 
 Run the following commands in the repository folder
