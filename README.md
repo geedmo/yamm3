@@ -74,6 +74,10 @@ If necessary, this code will prevent unexpected menu close when using some compo
 
 	bower install yamm3 --save
 
+### AngularJS
+
+Check it at [hjzheng/angular-mega-menu](https://github.com/hjzheng/angular-mega-menu)
+
 ### Compile
 
 Run the following commands in the repository folder
