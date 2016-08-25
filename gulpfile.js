@@ -3,7 +3,6 @@ var gulp        = require('gulp'),
     less        = require('gulp-less'),
     path        = require('path'),
     marked      = require('marked'), // For :markdown filter in jade
-    path        = require('path'),
     htmlhint    = require("gulp-htmlhint");
 
 
