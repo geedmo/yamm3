@@ -12,8 +12,5 @@
             "homepage": "http://geedmo.com"
         }
     ],
-    "main": "yamm/yamm.css",
-    "dependencies": {
-        "bootstrap": ">= 3.0.0"
-    }
+    "main": "yamm/yamm.css"
 }
