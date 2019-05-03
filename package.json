@@ -10,10 +10,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "gulp": "~3.8.11",
-    "gulp-jade": "^1.0.0",
-    "gulp-less": "^3.0.2",
-    "marked": "~0.3.3",
-    "gulp-htmlhint": "0.1.1"
+    "gulp": "4.0.1",
+    "gulp-htmlhint": "2.2.1",
+    "gulp-less": "4.0.1",
+    "gulp-pug": "4.0.1",
+    "jstransformer-markdown-it": "2.1.0"
   }
 }

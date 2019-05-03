@@ -1,77 +1,71 @@
-var gulp        = require('gulp'),
-    jade        = require('gulp-jade'),
-    less        = require('gulp-less'),
-    marked      = require('marked'), // For :markdown filter in jade
-    path        = require('path'),
-    htmlhint    = require("gulp-htmlhint");
+var gulp = require('gulp'),
+    pug = require('gulp-pug'),
+    less = require('gulp-less'),
+    path = require('path'),
+    htmlhint = require('gulp-htmlhint');
 
-
-// SOURCES CONFIG 
+// SOURCES CONFIG
 var source = {
-  templates: {
-    app: {
-        files : ['demo/jade/index.jade'],
-        watch: ['demo/jade/*.jade']
+    templates: {
+        app: {
+            files: ['demo/pug/index.pug'],
+            watch: ['demo/pug/*.pug']
+        }
+    },
+    styles: {
+        app: {
+            main: ['yamm/yamm.less'],
+            dir: 'yamm',
+            watch: ['yamm/yamm.less']
+        }
     }
-  },
-  styles: {
-    app: {
-      main: ['yamm/yamm.less'],
-      dir:  'yamm',
-      watch: ['yamm/yamm.less']
-    }
-  }
 };
 
-// BUILD TARGET CONFIG 
+// BUILD TARGET CONFIG
 var build = {
-  styles: './yamm',
-  templates: {
-    app: './'
-  }
+    styles: './yamm',
+    templates: {
+        app: './'
+    }
 };
-
 
 // Error handler
 function handleError(err) {
-  console.log(err.toString());
-  this.emit('end');
+    console.log(err.toString());
+    this.emit('end');
 }
-
 
 //---------------
 // TASKS
 //---------------
 
-
-
 // LESS
 gulp.task('yamm', function() {
-    return gulp.src(source.styles.app.main)
-        .pipe(less({
-            paths: [source.styles.app.dir]
-        }))
-        .on("error", handleError)
-        .pipe(gulp.dest(build.styles))
-        ;
+    return gulp
+        .src(source.styles.app.main)
+        .pipe(
+            less({
+                paths: [source.styles.app.dir]
+            })
+        )
+        .on('error', handleError)
+        .pipe(gulp.dest(build.styles));
 });
 
-
-
-// JADE
+// PUG
 gulp.task('templates', function() {
-    return gulp.src(source.templates.app.files)
-        .pipe(jade({
-            pretty: true
-        }))
-        .on("error", handleError)
+    return gulp
+        .src(source.templates.app.files)
+        .pipe(
+            pug({
+                pretty: true
+            })
+        )
+        .on('error', handleError)
         .pipe(htmlhint())
         .pipe(htmlhint.reporter())
-        .pipe(gulp.dest(build.templates.app))
-        ;
+        .pipe(gulp.dest(build.templates.app));
 });
-
-
 
 //---------------
 // WATCH
@@ -79,29 +73,21 @@ gulp.task('templates', function() {
 
 // Watch changes
 gulp.task('watch:demo', function() {
-  gulp.watch(source.templates.app.watch,     ['templates']);
+    gulp.watch(source.templates.app.watch, gulp.series('templates'));
 });
 
 gulp.task('watch:yamm', function() {
-  gulp.watch(source.styles.app.watch,        ['yamm']);
+    gulp.watch(source.styles.app.watch, gulp.series('yamm'));
 });
 
 //---------------
 // DEFAULT TASK
 //---------------
 
-gulp.task('default', [
-          'yamm',
-          'watch:yamm'
-        ]);
+gulp.task('default', gulp.series('yamm', 'watch:yamm'));
 
 //---------------
 // DEMO TASK
 //---------------
 
-gulp.task('demo', [
-          'yamm',
-          'templates',
-          'watch:yamm',
-          'watch:demo'
-        ]);
+gulp.task('demo', gulp.series('yamm', 'templates', gulp.parallel('watch:yamm', 'watch:demo')));

@@ -23,7 +23,7 @@ html(lang='en')
 
   body
 
-    include navbar-fixed
+    include navbar-fixed.pug
 
     .jumbotron.intro
 
@@ -47,7 +47,7 @@ html(lang='en')
       .row
         .col-md-4
           p.lead Markup
-          :markdown
+          :markdown-it
             1. Reuse navbar markup and add class `.yamm` at the top.
 
             2. Then add your markup into the `.dropdown-menu`
@@ -76,12 +76,12 @@ html(lang='en')
     .jumbotron
       .container
         p.lead Grid Example
-        include navbar-grid
+        include navbar-grid.pug
     .container
       .row
         .col-md-4
           p.lead Width
-          :markdown
+          :markdown-it
             By default every mega-dropdown will take the content size so is possible to use add `.yamm-fw` to `.dropdown` to expand it fullwidth
 
             Yamm works better with fullwidth menus.
@@ -101,13 +101,13 @@ html(lang='en')
     .jumbotron
       .container
         p.lead More components
-        include navbar-more
+        include navbar-more.pug
 
     .container
       .row
         .col-md-4
           p.lead JavaScript
-          :markdown
+          :markdown-it
             This code will prevent unexpected menu close when using some components (like accordion, forms, etc)
 
         .col-md-8
