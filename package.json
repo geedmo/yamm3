@@ -4,6 +4,7 @@
   "description": "Yet another megamenu for Bootstrap",
   "homepage": "http://geedmo.github.io/yamm3/",
   "author": "@geedmo",
+  "main": "yamm/yamm.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/geedmo/yamm3"
