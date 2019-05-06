@@ -1,11 +1,28 @@
 # Yamm
 
 
-This is *Yet another megamenu for [Bootstrap 3](http://getbootstrap.com/)* from Twitter.   
-   
+This is *Yet another megamenu for [Bootstrap 3](http://getbootstrap.com/)* from Twitter.
+
 Lightweight and pure CSS megamenu that uses the standard navbar markup and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
 
-####[Demo](http://geedmo.github.io/yamm3)
+#### [Demo](http://geedmo.github.io/yamm3)
+
+### Install with npm
+
+    npm install @geedmo/yamm3 --save
+
+### Install with bower
+
+    bower install yamm3 --save
+
+### Install via composer
+
+    {
+        "require": {
+            "geedmo/yamm3": "dev-master"
+        }
+    }
+
 
 ### Markup
 
@@ -25,7 +42,7 @@ Example
                 <ul class="dropdown-menu">
                     <li>
                         <div class="yamm-content">
-                        <div class="row"> 
+                        <div class="row">
                             ...
                     </li>
                 </ul>
@@ -37,7 +54,7 @@ Example
 
 ### Fullwidth
 
-By default every mega-dropdown will take the content size so is possible to use add `.yamm-fw` to `.dropdown` to expand it fullwidth.  
+By default every mega-dropdown will take the content size so is possible to use add `.yamm-fw` to `.dropdown` to expand it fullwidth.
 Yamm works better with fullwidth menus.
 
 Example
@@ -61,14 +78,9 @@ If necessary, this code will prevent unexpected menu close when using some compo
        e.stopPropagation()
     })
 
+### AngularJS
 
-### Install via composer
-
-	{ 
-		"require": {
-			"geedmo/yamm3": "dev-master"
-		}
-	}
+Check it at [hjzheng/angular-mega-menu](https://github.com/hjzheng/angular-mega-menu)
 
 ### Compile
 

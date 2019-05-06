@@ -7,13 +7,13 @@
     <meta name="description" content="Yet another megamenu for Bootstrap 3">
     <meta name="author" content="@geedmo">
     <title>Yamm!3 Megamenu for Bootstrap3</title>
-    <!-- Bootstrap and demo CSS -->
+    <!-- Bootstrap and demo CSS-->
     <link href="demo/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="demo/components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="demo/css/demo.css" rel="stylesheet">
     <!-- Yamm styles-->
     <link href="yamm/yamm.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
     <!--if lt IE 9
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
@@ -25,12 +25,12 @@
     <div class="navbar yamm navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Yamm Megamenu</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse-1"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Yamm Megamenu</a>
         </div>
-        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
             <!-- Classic list -->
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">List<b class="caret"></b></a>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">List<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li>
                   <!-- Content container to add padding -->
@@ -89,17 +89,17 @@
               </ul>
             </li>
             <!-- Accordion demo -->
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Accordion<b class="caret"></b></a>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Accordion<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li>
                   <div class="yamm-content">
                     <div class="row">
-                      <div id="accordion" class="panel-group">
+                      <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
                           <div class="panel-heading">
                             <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Collapsible Group Item #1</a></h4>
                           </div>
-                          <div id="collapseOne" class="panel-collapse collapse in">
+                          <div class="panel-collapse collapse in" id="collapseOne">
                             <div class="panel-body">Ut consectetur ullamcorper purus a rutrum. Etiam dui nisi, hendrerit feugiat scelerisque et, cursus eu magna. </div>
                           </div>
                         </div>
@@ -107,7 +107,7 @@
                           <div class="panel-heading">
                             <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible Group Item #2</a></h4>
                           </div>
-                          <div id="collapseTwo" class="panel-collapse collapse">
+                          <div class="panel-collapse collapse" id="collapseTwo">
                             <div class="panel-body">Nullam pretium fermentum sapien ut convallis. Suspendisse vehicula, magna non tristique tincidunt, massa nisi luctus tellus, vel laoreet sem lectus ut nibh. </div>
                           </div>
                         </div>
@@ -115,7 +115,7 @@
                           <div class="panel-heading">
                             <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Collapsible Group Item #3</a></h4>
                           </div>
-                          <div id="collapseThree" class="panel-collapse collapse">
+                          <div class="panel-collapse collapse" id="collapseThree">
                             <div class="panel-body">Praesent leo quam, faucibus at facilisis id, rhoncus sit amet metus. Sed vitae ipsum non nibh mattis congue eget id augue. </div>
                           </div>
                         </div>
@@ -126,8 +126,8 @@
               </ul>
             </li>
             <!-- Classic dropdown -->
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Classic<b class="caret"></b></a>
-              <ul role="menu" class="dropdown-menu">
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Classic<b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu">
                 <li><a tabindex="-1" href="#"> Action </a></li>
                 <li><a tabindex="-1" href="#"> Another action </a></li>
                 <li><a tabindex="-1" href="#"> Something else here </a></li>
@@ -136,17 +136,17 @@
               </ul>
             </li>
             <!-- Pictures -->
-            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Pictures<b class="caret"></b></a>
+            <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pictures<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li>
                   <div class="yamm-content">
                     <div class="row">
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="demo/img/190.jpg"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="demo/img/190.jpg"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="demo/img/190.jpg"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="demo/img/190.jpg"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="demo/img/190.jpg"></a></div>
-                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="demo/img/190.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a class="thumbnail" href="#"><img alt="150x190" src="demo/img/190.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a class="thumbnail" href="#"><img alt="150x190" src="demo/img/190.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a class="thumbnail" href="#"><img alt="150x190" src="demo/img/190.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a class="thumbnail" href="#"><img alt="150x190" src="demo/img/190.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a class="thumbnail" href="#"><img alt="150x190" src="demo/img/190.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a class="thumbnail" href="#"><img alt="150x190" src="demo/img/190.jpg"></a></div>
                     </div>
                   </div>
                 </li>
@@ -160,19 +160,22 @@
       <div class="container">
         <h1 class="page-header">Hello, Yamm 3!</h1>
         <p>This is<i>Yet another megamenu </i>for Bootstrap 3 from Twitter. Lightweight and pure CSS megamenu that uses the standard navbar markup and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.</p>
-        <p>This project is currently hosted on Github and is the sequel to Bootstrap2 Yamm <small><sup><a href="http://geedmo.github.com/yamm" title="Yamm for Bootstrap 2" target="_blank" class="text-muted"><em class="glyphicon glyphicon-new-window"></em></a></sup></small></p><br>
-        <p><a href="https://github.com/geedmo/yamm3" class="btn btn-default btn-lg">View on Github</a> <a href="https://github.com/geedmo/yamm3/archive/master.zip" class="btn btn-primary btn-lg">Download</a></p>
+        <p>This project is currently hosted on Github and is the sequel to Bootstrap2 Yamm <small><sup><a class="text-muted" href="http://geedmo.github.com/yamm" title="Yamm for Bootstrap 2" target="_blank"><em class="glyphicon glyphicon-new-window"></em></a></sup></small></p><br>
+        <p><a class="btn btn-default btn-lg" href="https://github.com/geedmo/yamm3">View on Github</a> <a class="btn btn-primary btn-lg" href="https://github.com/geedmo/yamm3/archive/master.zip">Download</a></p>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <p class="lead">Markup</p><ol>
-<li><p>Reuse navbar markup and add class <code>.yamm</code> at the top.</p>
+<li>
+<p>Reuse navbar markup and add class <code>.yamm</code> at the top.</p>
 </li>
-<li><p>Then add your markup into the <code>.dropdown-menu</code></p>
+<li>
+<p>Then add your markup into the <code>.dropdown-menu</code></p>
 </li>
-<li><p>Optionally use <code>.yamm-content</code> to wrap content with padding.</p>
+<li>
+<p>Optionally use <code>.yamm-content</code> to wrap content with padding.</p>
 </li>
 </ol>
 
@@ -203,12 +206,12 @@
         <!-- Grid demo navbar -->
         <div class="navbar navbar-default yamm">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Yamm Megamenu</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Yamm Megamenu</a>
           </div>
-          <div id="navbar-collapse-grid" class="navbar-collapse collapse">
+          <div class="navbar-collapse collapse" id="navbar-collapse-grid">
             <ul class="nav navbar-nav">
               <!-- Grid 12 Menu -->
-              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid<b class="caret"></b></a>
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Grid<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li class="grid-demo">
                     <div class="row">
@@ -256,7 +259,7 @@
               </li>
               <!--With Offsets 
               -->
-              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Offset<b class="caret"></b></a>
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Offset<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li class="grid-demo">
                     <div class="row">
@@ -275,7 +278,7 @@
               </li>
               <!--Aside Menu 
               -->
-              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Aside<b class="caret"></b></a>
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Aside<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li class="grid-demo">
                     <div class="row">
@@ -291,7 +294,7 @@
               </li>
               <!--Nesting Menu 
               -->
-              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Nesting<b class="caret"></b></a>
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Nesting<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li class="grid-demo">
                     <div class="row">
@@ -340,22 +343,22 @@
         <!-- Extra components navbar -->
         <div class="navbar navbar-default yamm">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-2" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Yamm Megamenu</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse-2"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Yamm Megamenu</a>
           </div>
-          <div id="navbar-collapse-2" class="navbar-collapse collapse">
+          <div class="navbar-collapse collapse" id="navbar-collapse-2">
             <ul class="nav navbar-nav">
               <!-- Media Example -->
-              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Media<b class="caret"></b></a>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Media<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li>
                     <div class="yamm-content">
                       <ul class="media-list">
-                        <li class="media"><a href="#" class="pull-right"><img src="demo/img/64x64.gif" alt="64x64" class="media-object"></a>
+                        <li class="media"><a class="pull-right" href="#"><img class="media-object" src="demo/img/64x64.gif" alt="64x64"></a>
                           <div class="media-body">
                             <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
                           </div>
                         </li>
-                        <li class="media"><a href="#" class="pull-right"><img src="demo/img/64x64.gif" alt="64x64" class="media-object"></a>
+                        <li class="media"><a class="pull-right" href="#"><img class="media-object" src="demo/img/64x64.gif" alt="64x64"></a>
                           <div class="media-body">
                             <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
                           </div>
@@ -366,7 +369,7 @@
                 </ul>
               </li>
               <!-- Tables -->
-              <li class="dropdown yamm-fullwidth"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tables<b class="caret"></b></a>
+              <li class="dropdown yamm-fullwidth"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Tables<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li>
                     <div class="yamm-content">
@@ -415,7 +418,7 @@
                 </ul>
               </li>
               <!-- Thumbnails demo -->
-              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Thumbnails<b class="caret"></b></a>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Thumbnails<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li>
                     <div class="yamm-content">
@@ -425,7 +428,7 @@
                             <div class="caption">
                               <h3>Thumb Label</h3>
                               <p>Mazagran doppio half and half aftertaste organic, rich doppio</p>
-                              <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn btn-default">Action</a></p>
+                              <p><a class="btn btn-primary" href="#">Action</a> <a class="btn btn-default" href="#">Action</a></p>
                             </div>
                           </div>
                         </div>
@@ -434,7 +437,7 @@
                             <div class="caption">
                               <h3>Thumb Label</h3>
                               <p>Black latte cinnamon, cultivar trifecta crema cappuccino</p>
-                              <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn btn-default">Action</a></p>
+                              <p><a class="btn btn-primary" href="#">Action</a> <a class="btn btn-default" href="#">Action</a></p>
                             </div>
                           </div>
                         </div>
@@ -443,7 +446,7 @@
                             <div class="caption">
                               <h3>Thumb Label</h3>
                               <p>Bar roast et, as latte café au lait, mocha aromatic robusta</p>
-                              <p><a href="#" class="btn btn-primary">Action </a> <a href="#" class="btn btn-default">Action </a></p>
+                              <p><a class="btn btn-primary" href="#">Action </a> <a class="btn btn-default" href="#">Action </a></p>
                             </div>
                           </div>
                         </div>
@@ -455,22 +458,22 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <!-- Forms -->
-              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Forms<b class="caret"></b></a>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Forms<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li>
                     <div class="yamm-content">
                       <form action="send.php">
                         <div class="form-group">
-                          <input id="inputName" type="text" placeholder="Name" class="form-control">
+                          <input class="form-control" id="inputName" type="text" placeholder="Name">
                         </div>
                         <div class="form-group">
-                          <input id="inputEmail" type="password" placeholder="Email" class="form-control">
+                          <input class="form-control" id="inputEmail" type="password" placeholder="Email">
                         </div>
                         <div class="form-group">
-                          <textarea placeholder="Write your message.." class="form-control"></textarea>
+                          <textarea class="form-control" placeholder="Write your message.."></textarea>
                         </div>
                         <div class="form-group">
-                          <button type="submit" class="btn btn-success">Send</button>
+                          <button class="btn btn-success" type="submit">Send</button>
                         </div>
                       </form>
                     </div>
@@ -498,29 +501,29 @@
         <hr>
         <div class="row">
           <div class="col-sm-4">
-            <p>MIT &copy; Geedmo 2015</p>
+            <p>MIT &copy; Geedmo 2019</p>
           </div>
           <div class="col-sm-8">
             <div class="social">
               <ul class="list-inline text-right">
                 <li>
-                  <iframe src="http://ghbtns.com/github-btn.html?user=geedmo&amp;repo=yamm3&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px" class="github-btn"></iframe>
+                  <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=geedmo&amp;repo=yamm3&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
                 </li>
                 <li>
-                  <iframe src="http://ghbtns.com/github-btn.html?user=geedmo&amp;repo=yamm3&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px" class="github-btn"></iframe>
+                  <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=geedmo&amp;repo=yamm3&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
                 </li>
-                <li><a href="https://twitter.com/share" data-lang="en" class="twitter-share-button">Tweet</a></li>
+                <li><a class="twitter-share-button" href="https://twitter.com/share" data-lang="en">Tweet</a></li>
               </ul>
             </div>
           </div>
         </div>
       </footer>
     </div>
-    <!-- /container -->
+    <!-- /container-->
     <!-- Bootstrap core JavaScript-->
-    <script src="demo/components/jquery/dist/jquery.js"></script>
+    <script src="demo/components/jquery/dist/jquery.min.js"></script>
     <script src="demo/components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <script>
       $(function() {
         window.prettyPrint && prettyPrint()
