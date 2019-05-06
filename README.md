@@ -7,6 +7,23 @@ Lightweight and pure CSS megamenu that uses the standard navbar markup and the f
 
 #### [Demo](http://geedmo.github.io/yamm3)
 
+### Install with npm
+
+    npm install @geedmo/yamm3 --save
+
+### Install with bower
+
+    bower install yamm3 --save
+
+### Install via composer
+
+    {
+        "require": {
+            "geedmo/yamm3": "dev-master"
+        }
+    }
+
+
 ### Markup
 
 1. Reuse navbar markup and add class `.yamm` at the top.
@@ -60,19 +77,6 @@ If necessary, this code will prevent unexpected menu close when using some compo
     $(document).on('click', '.yamm .dropdown-menu', function(e) {
        e.stopPropagation()
     })
-
-
-### Install via composer
-
-	{
-		"require": {
-			"geedmo/yamm3": "dev-master"
-		}
-	}
-
-### Install with bower
-
-	bower install yamm3 --save
 
 ### AngularJS
 
