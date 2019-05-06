@@ -1,7 +1,7 @@
 {
     "name": "yamm3",
     "description": "Yet another megamenu for Bootstrap 3",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "homepage": "http://geedmo.github.io/yamm3/",
     "keywords": ["bootstrap", "megamenu", "megadropdown"],
     "license": "MIT",
