@@ -23,7 +23,6 @@ Lightweight and pure CSS megamenu that uses the standard navbar markup and the f
         }
     }
 
-
 ### Markup
 
 1. Reuse navbar markup and add class `.yamm` at the top.
@@ -81,6 +80,10 @@ If necessary, this code will prevent unexpected menu close when using some compo
 ### AngularJS
 
 Check it at [hjzheng/angular-mega-menu](https://github.com/hjzheng/angular-mega-menu)
+
+## Bugs and feature requests
+
+Please first read the [issue guidelines](https://github.com/geedmo/yamm3/blob/master/.github/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/geedmo/yamm3/issues/new).
 
 ### Compile
 
