@@ -7,6 +7,8 @@ Lightweight and pure CSS megamenu that uses the standard navbar markup and the f
 
 #### [Demo](http://geedmo.github.io/yamm3)
 
+Here you can find [Yamm for Bootstrap 4](https://github.com/geedmo/yamm)
+
 ### Install with npm
 
     npm install @geedmo/yamm3 --save
