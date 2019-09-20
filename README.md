@@ -83,7 +83,7 @@ If necessary, this code will prevent unexpected menu close when using some compo
 
 Check it at [hjzheng/angular-mega-menu](https://github.com/hjzheng/angular-mega-menu)
 
-## Bugs and feature requests
+### Bugs and feature requests
 
 Please first read the [issue guidelines](https://github.com/geedmo/yamm3/blob/master/.github/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/geedmo/yamm3/issues/new).
 
@@ -101,3 +101,18 @@ To compile yamm with demo
 ### License
 
 - Licenced under MIT - [details here](LICENSE.txt)
+
+## Sponsored content
+<p>
+    <a href="https://wrapbootstrap.com/theme/angle-bootstrap-admin-template-WB04HF123?ref=geedmo">
+        <img width="180px" src="https://i.imgur.com/1UcvtF7.jpg" alt="Angle - Bootstrap Admin Template" />
+        &nbsp;&nbsp;
+    </a>
+    <a href="https://wrapbootstrap.com/theme/inspinia-responsive-admin-theme-WB0R5L90S?ref=geedmo">
+        <img width="180px" src="https://i.imgur.com/UkuEfag.jpg" alt="INSPINIA - Responsive Admin Theme" />
+        &nbsp;&nbsp;
+    </a>
+    <a href="https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0?ref=geedmo">
+        <img width="180px" src="https://i.imgur.com/eo0j2fe.jpg" alt="SmartAdmin - Responsive WebApp" />
+    </a>
+</p>
