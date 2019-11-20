@@ -104,15 +104,8 @@ To compile yamm with demo
 
 ## Sponsored content
 <p>
-    <a href="https://wrapbootstrap.com/theme/angle-bootstrap-admin-template-WB04HF123?ref=geedmo">
-        <img width="180px" src="https://i.imgur.com/1UcvtF7.jpg" alt="Angle - Bootstrap Admin Template" />
+    <a href="https://codecanyon.net/item/47admin-bootstrap-admin-skin/7647583?ref=geedmo">
+        <img width="180px" src="https://i.imgur.com/EAiUz7N.jpg" alt="47Admin - Bootstrap Admin Template" />
         &nbsp;&nbsp;
-    </a>
-    <a href="https://wrapbootstrap.com/theme/inspinia-responsive-admin-theme-WB0R5L90S?ref=geedmo">
-        <img width="180px" src="https://i.imgur.com/UkuEfag.jpg" alt="INSPINIA - Responsive Admin Theme" />
-        &nbsp;&nbsp;
-    </a>
-    <a href="https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0?ref=geedmo">
-        <img width="180px" src="https://i.imgur.com/eo0j2fe.jpg" alt="SmartAdmin - Responsive WebApp" />
     </a>
 </p>
