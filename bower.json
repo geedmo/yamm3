@@ -12,5 +12,5 @@
             "homepage": "http://geedmo.com"
         }
     ],
-    "main": "yamm/yamm.css"
+    "main": "dist/yamm.css"
 }

@@ -23,7 +23,7 @@ var source = {
 
 // BUILD TARGET CONFIG
 var build = {
-    styles: './yamm',
+    dist: './dist',
     templates: {
         app: './'
     }
@@ -49,7 +49,7 @@ gulp.task('yamm', function() {
             })
         )
         .on('error', handleError)
-        .pipe(gulp.dest(build.styles));
+        .pipe(gulp.dest(build.dist));
 });
 
 // PUG
