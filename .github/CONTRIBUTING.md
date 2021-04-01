@@ -16,12 +16,12 @@ Please respect the following restrictions:
 Guidelines for bug reports:
 
 0. **[validate your HTML](https://html5.validator.nu/)** to ensure your problem isn't caused by a simple error in your own code.
-  
+
 1. **Use the GitHub issue search** &mdash; check if the issue has already been reported.
-  
+
 2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `master` or development branch in the repository.
-  
-3. **Isolate the problem** &mdash; ideally create a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example. 
+
+3. **Isolate the problem** &mdash; ideally create a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example.
    [This JS Bin](https://jsbin.com/nilopib/edit?html,output) is a helpful template.
 
 Example:
